@@ -10,9 +10,7 @@ Bootstrap follows common web standards and—with minimal extra effort—can be 
 
 Some common HTML elements are always in need for basic accessibility enhancements through `role`s and Aria attributes. Below is a list of some of the most frequently used ones.
 
-{% callout info %}
 **Heads up!** As we go through the alphas, we'll be moving more accessibility notes here with links to specific sections from other areas of the docs.
-{% endcallout %}
 
 ### Button groups
 
@@ -24,13 +22,11 @@ In addition, groups and toolbars should be given an explicit label, as most assi
 
 If your navigation contains many links and comes before the main content in the DOM, add a `Skip to main content` link before the navigation (for a simple explanation, see this [A11Y Project article on skip navigation links](http://a11yproject.com/posts/skip-nav-links)). Using the `.sr-only` class will visually hide the skip link, and the <code>.sr-only-focusable</code> class will ensure that the link becomes visible once focused (for sighted keyboard users).
 
-{% callout danger %}
 Due to long-standing shortcomings/bugs in Internet Explorer (see this article on [in-page links and focus order](http://accessibleculture.org/articles/2010/05/in-page-links/)), you will need to make sure that the target of your skip link is at least programmatically focusable by adding `tabindex="-1"`.
 
 In addition, you may want to explicitly suppress a visible focus indication on the target (particularly as Chrome currently also sets focus on elements with `tabindex="-1"` when they are clicked with the mouse) with `#content:focus { outline: none; }`.
 
 Note that this bug will also affect any other in-page links your site may be using, rendering them useless for keyboard users. You may consider adding a similar stop-gap fix to all other named anchors / fragment identifiers that act as link targets.
-{% endcallout %}
 
 {% highlight html %}
 <body>
