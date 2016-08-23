@@ -6,11 +6,44 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<script src="javascripts/smooth-scroll.js"></script>
+	<link type="text/css" rel="stylesheet" href="main.css">
 	<title>woot</title>
 </head>
 <body>
+		<div id="section-topbar">
+			<div id="topbar-inner">
+				<div class="container">
+					<div class="row">
+						<div class="dropdown">	
+							<ul id="nav" class="nav">
+								<li class="menu-item"><a data-scroll href="#headerwrap" title="About"><span class="glyphicon glyphicon-user"></span></a></li>
+								<li class="menu-item"><a data-scroll href="#resume" title="Resume"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+								<li class="menu-item"><a data-scroll href="#work" title="Works"><span class="glyphicon glyphicon-lock"></span></a></li>
+								<li class="menu-item"><a data-scroll href="#contact" title="Contact"><span class="glyphicon glyphicon-phone"></span></a></li>
+							</ul><!--/ uL#nav -->
+						</div><!-- /.dropdown -->
+
+					<div class="clear"></div>
+					</div><!--/.row -->
+				</div><!--/.container -->
+
+			<div class="clear"></div>
+			</div><!--/ #topbar-inner -->
+		</div><!--/ #section-topbar -->
+
+
+
 	<h1>woot</h1>
-	<p>Is this working now</p>
+	<div class="container-fluid">
+		<p id="resume">Is this working now</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p>blah</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p>blah</p>
+	</div>
+	<script>
+   			 smoothScroll.init(); 
+		</script>
 </body>
 </html>
