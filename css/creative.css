@@ -208,6 +208,18 @@ aside {
     color: #4afff0;
   }
 }
+#logo {
+
+  background-image: url('../img/logo.jpg') ;
+  background-position: center;
+
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height:150px;
+
+}
 #profilepic {
   background-image: url('../imgDB/profilepic.JPG') ;
         background-position: center;
