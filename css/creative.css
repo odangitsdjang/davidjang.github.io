@@ -6,7 +6,7 @@
  * Useful links that I used to create the website: http://imagecolorpicker.com/en
 
 
-Widely used colors in the CSS:   4afff0: teal    
+Widely used colors in the CSS:   4afff0: teal      ORANGE #F05F40
 
 
 
@@ -27,24 +27,36 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color:   #4afff0;   /*ORANGE #F05F40   current is teal*/
+  border-color:  white;   /*ORANGE #F05F40   current is teal*/
   border-width: 5px;
   max-width: 100px;
 }
-hr.light {
-  border-color: #4afff0;  /* white */
+hr.main{
+  border-color:   #AD6EC7;   
+}
+hr.brightpurple {
+  border-color: #7EB4BD;  /* bright purpkle */
+}
+hr.blue {
+  border-color: #E9C2F3;  /* light blue */
+}
+hr.darkblack {
+  border-color: #1D0C20;  /* light blue */
+}
+hr.white {
+
+  border-color: white;
 }
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: ##4afff0;
+  color: #4afff0;
 }
 a:hover,
 a:focus {
   color: #eb3812; /*ORANGE */
 }
-h1,
 h2,
 h3,
 h4,
@@ -52,20 +64,49 @@ h5,
 h6 {
   font-family: 'Monda', 'Helvetica Neue', Arial, sans-serif;
 }
+
+h1 {
+   font-family: 'Monda', 'Helvetica Neue', Arial, sans-serif;
+  color: #FDF4F7;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-
-
 }
-/* Color used was hex color used from the picture above the */
+.pAboutMe{
+    color: white;
+}
+
+.container .row  .col-lg-2 h3 { 
+
+    font-weight: bold;
+  
+    
+}
+/* Color used was hex color used from the picture above the 
+   About Me Color*/
 .bg-primary {
   background-color: #030303;          /* Other possible colors: dark blue:  455268;   next section do dark grey: ; 3D351E */ 
 }
 .bg-dark {
   background-color: #222222; /*black */
   color: white;
+}
+/* Education color*/
+.bg-education {
+  background-color: #222222; /* black  */
+  color: white;
+}
+/* Projects color*/
+.bg-projects {
+  background-color: #34615E; /* cucumber */
+  color: white;
+}
+.bg-contact {
+  background-color: white; /*black */
+  color: black;
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
@@ -88,7 +129,7 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #4afff0;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -147,13 +188,16 @@ aside {
     background-color: black;            /* navbar color when scrolled down*/
     border-color: rgba(34, 34, 34, 0.05);
   }
+
+   /*LEFT LOGO/HOME DEFAULT*/
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #4afff0;
+    color: white;
     font-size: 14px;
   }
+  /*LEFT LOGO/HOME  HOVER*/
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #4afff0;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -200,13 +244,15 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
 }
+/*main page stuff*/
+
 header .header-content .header-content-inner hr {
-  margin: 30px auto;
+  margin: 140px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+  font-size: 26px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -236,8 +282,18 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+/* section heading format */ 
 .section-heading {
   margin-top: 0;
+  color:  white;
+}
+.section-aboutMe{
+  margin-top: 0;
+  color:  #7EB4BD;
+}
+.section-Education{
+  margin-top: 0;
+  color: #060407;
 }
 .service-box {
   max-width: 400px;
@@ -257,11 +313,12 @@ header .header-content .header-content-inner p {
   max-width: 650px;
   margin: 0 auto;
 }
+/*projects box*/
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(10,19,18, 0.9);  
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -441,3 +498,45 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* from other themes */
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/*/
