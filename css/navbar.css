@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  color: white;
+  z-index:3;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header h1 {
+}
+
+header li {
+  list-style: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.colored {
+  background-color: black;
+}

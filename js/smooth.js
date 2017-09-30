@@ -18,7 +18,7 @@ export const scrollTo = (element) => {
 
 // // Scroll down 100 pixels
 // window.scrollBy({
-//   top: 100, // could be negative value which would mean scroll up 
+//   top: 100, // could be negative value which would mean scroll up
 //   left: 0,
 //   behavior: 'smooth'
 // });

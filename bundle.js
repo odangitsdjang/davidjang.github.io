@@ -71,8 +71,31 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__smooth__ = __webpack_require__(1);
 
-// can add other functionality for the website in here
+
 document.addEventListener('DOMContentLoaded', () => {
+  // var oLink = document.getElementById('link');
+  var topLink = document.getElementById('top-link');
+  // oLink.addEventListener('click', (link) => scrollTo(link) );
+  topLink.addEventListener('click', (e) => {
+    console.log("hi");
+    e.preventDefault();
+    Object(__WEBPACK_IMPORTED_MODULE_0__smooth__["a" /* scrollToTop */])();
+  });
+
+  // scroll bar change css
+  var navBar = document.getElementById('navbar');
+  window.onscroll = function () {
+    console.log(window.scrollY);
+    // add the offset of the pixel height to change color a little earlier
+    if ( (window.scrollY + 32 ) >= window.innerHeight ) {
+        navBar.classList.add("colored");
+        navBar.classList.remove("transparent");
+    }
+    else {
+        navBar.classList.add("transparent");
+        navBar.classList.remove("colored");
+    }
+  };
 
 });
 
@@ -92,7 +115,7 @@ const scrollToTop = () => {
     behavior: 'smooth'
   });
 };
-/* unused harmony export scrollToTop */
+/* harmony export (immutable) */ __webpack_exports__["a"] = scrollToTop;
 
 
 // Scroll to a certain element
@@ -106,7 +129,7 @@ const scrollTo = (element) => {
 
 // // Scroll down 100 pixels
 // window.scrollBy({
-//   top: 100, // could be negative value which would mean scroll up 
+//   top: 100, // could be negative value which would mean scroll up
 //   left: 0,
 //   behavior: 'smooth'
 // });

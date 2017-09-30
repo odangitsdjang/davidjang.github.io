@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   entry: './js/entry.js',
   output: {
-    filename: './js/bundle.js',
+    filename: './bundle.js',
   },
   devtool: 'source-map',
   resolve: {
@@ -11,4 +11,4 @@ module.exports = {
   }
 };
 
-// run "webpack" to bundle it together 
+// run "webpack" to bundle it together
