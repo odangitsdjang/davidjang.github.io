@@ -1,6 +1,6 @@
-Implemented using basic HTML/CSS(Bootstrap 3)/JS
+Implemented using HTML/CSS/JS
 ==============
 
-Created within a week for COGS182A Portfolio
---------------
-Used BSTheme from startbootstrap
+Created after all the tools I learned at App Academy!
+
+## Additional frameworks/tools used

@@ -1,7 +1,7 @@
 {
   "name": "creative",
   "title": "Creative",
-  "version": "3.3.7+1",
+  "version": "3.3.7",
   "homepage": "http://startbootstrap.com/template-overviews/creative",
   "author": "Start Bootstrap",
   "license": {
@@ -24,6 +24,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-creative.git"
+  },
+  "description": "Implemented using HTML/CSS/JS ==============",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues"
+  },
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "webpack": "^3.6.0"
   }
 }
