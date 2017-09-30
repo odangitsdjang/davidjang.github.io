@@ -2,7 +2,7 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
-  color: white;
+  color: rgb(240,240,240);
   z-index:3;
 }
 
@@ -14,12 +14,13 @@ header h1 {
 }
 
 header li {
-  list-style: none;
+  padding-right: 40px;
+  margin: auto 0;
 }
 
 header ul {
   display: flex;
-  justify-content: space-between;
+  height: 100%;
 }
 
 .transparent {
@@ -28,4 +29,27 @@ header ul {
 
 .colored {
   background-color: black;
+}
+
+header a {
+  transition: all .2s ease-in-out;
+}
+header a:visited {
+  color: rgb(240,240,240);
+}
+
+header a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+header h4 {
+  text-shadow: 1px 1px black;
+}
+
+header h1, h4 {
+  transition: all .1s ease-in-out;
+}
+header h1:hover, h4:hover {
+  transform: scale(1.02);
 }

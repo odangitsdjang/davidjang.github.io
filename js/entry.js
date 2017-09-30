@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // scroll bar change css
   var navBar = document.getElementById('navbar');
   window.onscroll = function () {
-    console.log(window.scrollY);
     // add the offset of the pixel height to change color a little earlier
     if ( (window.scrollY + 32 ) >= window.innerHeight ) {
         navBar.classList.add("colored");
