@@ -75,11 +75,21 @@ const NAVBAR_OFFSET = 42;
 /* harmony export (immutable) */ __webpack_exports__["NAVBAR_OFFSET"] = NAVBAR_OFFSET;
 
 document.addEventListener('DOMContentLoaded', () => {
-  const link1 = document.querySelector('.link');
+  const link1 = document.getElementById('link1');
   link1.addEventListener('click', (e) => {
-    e.preventDefault();
     Object(__WEBPACK_IMPORTED_MODULE_0__smooth__["a" /* scrollTo */])(e.target.name);
   });
+
+  const link2 = document.getElementById('link2');
+  link2.addEventListener('click', (e) => {
+    Object(__WEBPACK_IMPORTED_MODULE_0__smooth__["a" /* scrollTo */])(e.target.name);
+  });
+
+  const top = document.getElementById('top');
+  top.addEventListener('click', __WEBPACK_IMPORTED_MODULE_0__smooth__["b" /* scrollToTop */]);
+
+
+
 
   // scroll bar change css
   const navBar = document.getElementById('navbar');
@@ -115,7 +125,7 @@ const scrollToTop = () => {
     behavior: 'smooth'
   });
 };
-/* unused harmony export scrollToTop */
+/* harmony export (immutable) */ __webpack_exports__["b"] = scrollToTop;
 
 
 // Scroll to a certain element
@@ -129,13 +139,6 @@ const scrollTo = (element) => {
 };
 /* harmony export (immutable) */ __webpack_exports__["a"] = scrollTo;
 
-
-// // Scroll down 100 pixels
-// window.scrollBy({
-//   top: 100, // could be negative value which would mean scroll up
-//   left: 0,
-//   behavior: 'smooth'
-// });
 
 
 /***/ })

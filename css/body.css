@@ -3,6 +3,26 @@
     background-size: cover;
     position: relative;
 }
+
+.fullscreen * {
+  text-align: center;
+}
+
+.fullscreen h2 {
+  font-size: 35px;
+}
+
+.fullscreen h3 {
+  font-size: 25px;
+}
+
+.fullscreen h4 {
+  font-size: 20px;
+}
+.fullscreen h5 {
+  font-size: 15px;
+}
+
 .navbar-offset {
   padding: 27px;
 }
@@ -16,4 +36,9 @@
 }
 .text-center {
   text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
