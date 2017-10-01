@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  background-color: white;
+}
+
+footer p {
+  font-size: 12px;
+  text-align:  center;
+}
+footer div {
+  margin: 0 auto;
+  width: 30%;
+}
+footer ul {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+footer li {
+  text-align: center;
+  flex: 1 0 auto;
+  list-style: none;
+  font-size: 36px;
+}
+
+footer a {
+  color: black
+}
+
+footer a:hover {
+  color: turquoise
+}
+
+footer i {
+  font-size: 18px;
+  transition: all .1s ease-in-out;
+}
+footer i:hover  {
+  transform: scale(1.5);
+}
+footer .fa {
+  font-size: 30px;
+}

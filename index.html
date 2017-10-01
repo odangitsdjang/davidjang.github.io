@@ -12,7 +12,9 @@
 
     <title>David Jang's Website</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel='stylesheet' type='text/css'>
@@ -21,7 +23,10 @@
   <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/css_reset.css" type='text/css'>
     <link rel="stylesheet" href="./css/navbar.css" type='text/css'>
-    <link rel="stylesheet" href="./css/landing.css" type='text/css'>
+    <link rel="stylesheet" href="./css/body.css" type='text/css'>
+    <link rel="stylesheet" href="./css/about.css" type='text/css'>
+    <link rel="stylesheet" href="./css/projects.css" type='text/css'>
+    <link rel="stylesheet" href="./css/footer.css" type='text/css'>
 </head>
 
 <body>
@@ -29,34 +34,29 @@
     <h1> <a href="#"> David Jang </a> </h1>
     <nav>
       <ul>
-        <li> <h4> <a href="#"> About Me </a> </h4> </li>
-        <li> <h4> <a href="#"> Projects </a> </h4> </li>
-        <li> <h4> <a href="#"> Contact </a> </h4> </li>
+        <li> <h4> <a class="link" name=".about-color" href="#about"> About Me </a> </h4> </li>
+        <li> <h4> <a class="link" name=".projects" href="#projects"> Projects </a></h4> </li>
       </ul>
     </nav>
   </header>
 
-  <div class="fullscreen">
+  <div class="fullscreen main1">
 
   </div>
 
 <!--              ABOUT ME SECTION             -->
-  <section class="bg-primary" id="about">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <h2 class="section-aboutMe" >About Me</h2>
-                  <hr class="white">
-                  <p class="pAboutMe">I am an aspiring full stack developer with a computer science degree from University of California, San Diego. After graduating, I wanted to explore the technologies being used in the industry today before diving straight into the job with no experience. I then decided to go to the most reputable coding bootcamp in San Francisco called App Academy, where I mastered Ruby/Rails, JavaScript/React.  </p>
-                 <!-- <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a> -->
+  <div class="fullscreen about-color">
+      <div class="navbar-offset">
 
-              </div>
-          </div>
       </div>
-  </section>
+      <div class="about inner">
+        <h2 class="text-center">About Me</h2>
+        <p>I am an aspiring full stack developer with a computer science degree from University of California, San Diego. After graduating, I wanted to explore the technologies being used in the industry today before diving straight into the job with no experience. I then decided to go to the most reputable coding bootcamp in San Francisco called App Academy, where I mastered Ruby/Rails, JavaScript/React.  </p>
+      </div>
+  </div>
 
 <!-- PICTURE~!! -->
-  <div id="profilepic">
+  <div >
   </div>
 
 
@@ -98,7 +98,7 @@
       </div>
   </section>
 
-   <section class="bg-projects" id="projects">
+   <section class="projects">
       <div class="container">
           <div class="row">
               <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -162,28 +162,27 @@
       </div>
   </section>
 
-  <a id="top-link" href="#doesntmatter"> should scroll to top </a>
+  <hr/>
 
-
-  <section  class="bg-contact" id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <h2 class="section-heading">Contact </h2>
-
-
-              </div>
-              <div class="col-lg-4 col-lg-offset-2 text-center">
-                  <i class="fa fa-phone fa-3x sr-contact"></i>
-                  <p>Get to know me for my number :)</p>
-              </div>
-              <div class="col-lg-4 text-center">
-                  <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                  <p><a href="mailto:david.c.jang@gmail.com">david.c.jang@gmail.com</a>, <a href="mailto:cjang@ucsd.edu">cjang@ucsd.edu</a></p>
-              </div>
-          </div>
-      </div>
-  </section>
+  <footer>
+    <div>
+      <p>Copyright &copy; Chu Sik Jang 2017</p>
+      <ul>
+        <li >
+          <a href="https://github.com/odangitsdjang/"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li >
+          <a href="https://www.facebook.com/ddaavviidd"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li >
+          <a href="https://www.instagram.com/theavidjang"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li >
+          <a href="https://www.linkedin.com/in/chu-david-jang-22771781/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- jQuery -->
   <script
@@ -193,20 +192,6 @@
 
   <!-- Custom JavaScript -->
   <script type="text/javascript" src="bundle.js"></script>
-
-
-<aside class="bg-dark">
-   <footer>
-
-
-      <div class="container text-center">
-      <img id="logo" src="img/logo.png" alt="logo">
-          <p>Copyright &copy; Chu Sik Jang 2016</p>
-
-      </div>
-  </footer>
-</aside>
-
 
 </body>
 

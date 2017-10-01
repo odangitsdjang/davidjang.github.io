@@ -71,22 +71,21 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__smooth__ = __webpack_require__(1);
 
+const NAVBAR_OFFSET = 42;
+/* harmony export (immutable) */ __webpack_exports__["NAVBAR_OFFSET"] = NAVBAR_OFFSET;
 
 document.addEventListener('DOMContentLoaded', () => {
-  // var oLink = document.getElementById('link');
-  var topLink = document.getElementById('top-link');
-  // oLink.addEventListener('click', (link) => scrollTo(link) );
-  topLink.addEventListener('click', (e) => {
-    console.log("hi");
+  const link1 = document.querySelector('.link');
+  link1.addEventListener('click', (e) => {
     e.preventDefault();
-    Object(__WEBPACK_IMPORTED_MODULE_0__smooth__["a" /* scrollToTop */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__smooth__["a" /* scrollTo */])(e.target.name);
   });
 
   // scroll bar change css
-  var navBar = document.getElementById('navbar');
+  const navBar = document.getElementById('navbar');
   window.onscroll = function () {
     // add the offset of the pixel height to change color a little earlier
-    if ( (window.scrollY + 32 ) >= window.innerHeight ) {
+    if ( (window.scrollY + NAVBAR_OFFSET ) >= window.innerHeight ) {
         navBar.classList.add("colored");
         navBar.classList.remove("transparent");
     }
@@ -104,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__entry__ = __webpack_require__(0);
+
 // inspired from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
 // scroll to top
@@ -114,16 +115,19 @@ const scrollToTop = () => {
     behavior: 'smooth'
   });
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = scrollToTop;
+/* unused harmony export scrollToTop */
 
 
 // Scroll to a certain element
 const scrollTo = (element) => {
+  console.log(`element is ${document}`);
   document.querySelector(element).scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'smooth',
+    block: 'start'
   });
+  // window.scrollBy(0, -1 * NAVBAR_OFFSET );
 };
-/* unused harmony export scrollTo */
+/* harmony export (immutable) */ __webpack_exports__["a"] = scrollTo;
 
 
 // // Scroll down 100 pixels

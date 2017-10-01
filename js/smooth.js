@@ -1,3 +1,4 @@
+import { NAVBAR_OFFSET } from './entry';
 // inspired from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
 // scroll to top
@@ -11,9 +12,12 @@ export const scrollToTop = () => {
 
 // Scroll to a certain element
 export const scrollTo = (element) => {
+  console.log(`element is ${document}`);
   document.querySelector(element).scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'smooth',
+    block: 'start'
   });
+  // window.scrollBy(0, -1 * NAVBAR_OFFSET );
 };
 
 // // Scroll down 100 pixels

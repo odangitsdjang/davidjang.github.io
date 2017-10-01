@@ -4,6 +4,7 @@ header {
   display: flex;
   color: rgb(240,240,240);
   z-index:3;
+  height: 50px;
 }
 
 header nav {
@@ -46,7 +47,11 @@ header a:hover {
 header h4 {
   text-shadow: 1px 1px black;
 }
-
+header h1 {
+  margin: auto 0;
+  padding-left: 20px;
+  font-size: 29px;
+}
 header h1, h4 {
   transition: all .1s ease-in-out;
 }
