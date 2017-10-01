@@ -42,4 +42,5 @@ table {
 }
 a, a:hover, a:visited {
 	text-decoration: none;
+	font-color: white;
 }
